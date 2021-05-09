@@ -1,0 +1,619 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #FFF;
+	height: 100%;
+	width: 100%;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#main {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# TOP BAR 
+-------------------------------------------------------------- */
+.top-bar .container { width: 1100px; }
+.top-bar .right-bar-side {
+    display: flex;
+    justify-content: flex-end;
+}
+.top-bar ul li { /* Mettre les icones sur la meme ligne (TOP BAR) */
+    display: inline-block;
+}
+
+.top-bar ul li a { /* modifier couleur et taille des icones (TOP BAR) */
+    font-size: 30px;
+    margin: 30px 5px 0;
+    line-height: 30px;
+    text-decoration: none;/* les icones ne seront pas surligner (TOP BAR) */
+     
+}
+
+.fa-facebook {
+	color:#3b5998;
+} 
+
+.fa-linkedin {
+	color:#007bb6;
+}
+
+.fa-twitter {
+	color:#00aced;
+}
+
+.fa-instagram {
+	color:orangered;
+}
+
+
+/*--------------------------------------------------------------
+# NAV BAR 
+-------------------------------------------------------------- */
+/*sticky header position*/
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+.navbar {
+  background: #ffffff;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+       box-shadow: 0 8px 6px -6px black;
+  min-height: 85px;
+}
+
+.navbar-nav{
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+
+}
+
+nav li a {
+    font-size: 20px;
+font-weight: bold; 
+    }
+/*Underline animation*/
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #fa561bef;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #fa561bef;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  /*--------------------------------------------------------------
+# Video
+-------------------------------------------------------------- */
+    #video .container{ margin-top: 25px;
+    }
+    #video  .col-md-7 h3,#header  .col-md-7 h6 { Color: rgb(1, 1, 141);text-align: justify;}
+/*boutton*/
+#video  .btn{ margin-top: 5px; ;}
+#video  .btns{ display:flex;justify-content:flex-end;}
+
+   /*--------------------------------------------------------------
+# Programme
+-------------------------------------------------------------- */
+#programme .container{ margin-top: 55px;
+}
+#programme  .col-md-7 h4,#programme  .col-md-7 h3,#programme  .col-md-7 h6 { Color: rgb(1, 1, 141);text-align: justify;}
+
+.rounded  { /*Image (Programme) */
+    width: 60%;
+    height: auto;
+}
+
+.vertical {    /*Texte vertical (Programme) */
+
+    writing-mode: vertical-rl;
+    text-orientation:sideways
+    ;
+    background-color:#FED168;
+    padding: 10px 10px ;
+    position: absolute;
+    top: 9%;
+  }
+  /*--------------------------------------------------------------
+# Banner
+-------------------------------------------------------------- */
+  #banner .img-fluid {width: 100%; height:auto;}
+/* Container needed to position the button. Adjust the width as needed */
+#banner .container {
+    position: relative;
+  }
+
+  /* Style the button and place it in the middle of the container/image */
+  #banner .container .btn {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    font-weight: bold;
+    background-color: #0251fa;
+    color: white;
+    font-size: 26px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #banner .container .btn a{
+    color: white;
+  }
+  #banner .container .btn:hover {
+    background-color: #214ca8;
+  }
+
+  /*boutton annimation https://codepen.io/SauravTom/pen/Jougx*/
+  .bounce {
+   
+   
+    text-align:center;
+    
+    animation: bounce 1.4s infinite;
+  }
+  @keyframes bounce {
+    0% {
+transform: scale(1,1) translate(0px, 0px);
+}
+
+30%{
+transform: scale(1,0.8) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1.1) translate(0px, -25px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}
+/*--------------------------------------------------------------
+# CONTACT  src:https://www.youtube.com/watch?v=p9Ubg6Mqq6w 
+-------------------------------------------------------------- */
+ 
+
+  #contact{
+      margin-top:5%;
+    height: auto;
+}
+
+  .contact-in {
+width: 95%; 
+height: auto; 
+margin: auto; 
+display: flex; 
+flex-wrap: wrap; 
+padding: 10px; 
+border-radius: 10px; 
+background: #fff; 
+box-shadow: 0px 0px 10px 0px rgb(97, 97, 97); }
+.contact-map {
+width: 100%; 
+height: auto; 
+flex: 50%; }
+
+.contact-map iframe {
+    width: 100%; 
+    height: 100%; 
+     }
+.contact-form {
+    width: 100%; 
+    height: auto; 
+    flex: 50%; 
+    padding: 30px;
+text-align: center;}
+    .contact-form h1{
+     margin-bottom: 10px; }
+
+     .contact-form-txt {
+        width: 100%; 
+        height: 40px;
+        border: 1px solid #bcbcbc;
+        color:#000;
+    border-radius:50px;
+outline: none;
+margin-bottom: 20px;
+padding:15px
+}
+.contact-form-txt::placeholder{color:#aaa;}
+     .contact-form-textarea {
+        width: 100%; 
+        height: 130px;
+        border: 1px solid #bcbcbc;
+        color:#000;
+    border-radius:10px;
+outline: none;
+margin-bottom: 20px;
+padding:15px
+}
+
+.contact-form-textarea::placeholder{color:#aaa;}
+.contact-form-btn{
+    width: 100%; 
+    outline: none;
+    border: none;
+    border-radius:50px;
+background:#5cb85c;
+    color:#fff;
+text-transform:uppercase;
+padding:10px 0;
+cursor: pointer;
+font-size: 19px;}
+.contact-form-btn:hover{background:#408040;
+}
+
+/*--------------------------------------------------------------
+# newsletter
+-------------------------------------------------------------- */
+#newsletter {
+    padding: 15px;
+    margin-top: 25px;
+    color: #ffffff;
+    background: #143b62
+    ;
+  }
+  
+  #newsletter h1 {
+   font-size:25px;
+  }
+  
+  #newsletter form {
+    float: right;    padding: 10px;
+
+  }
+  
+  #newsletter input[type="email"]{
+    padding: 4px;   
+    height: 38px;
+    width: 350px;
+  }
+
+  #newsletter .container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  
+  #newsletter .button_1{
+    height: 38px;
+    background: #F18C74;
+    border: 0;
+    border-radius: 0 10px 10px 0 ;
+    padding-left: 20px;
+    font-size:16px;
+    font-weight:bold;
+    padding-right: 20px;
+    color: #ffffff;
+  }
+
+
+
+/*--------------------------------------------------------------
+# footer
+-------------------------------------------------------------- */
+footer ul {
+    padding:0;
+    margin:0
+   }
+   footer li {
+    list-style:none
+   }
+
+   footer  a:focus {
+    outline:0
+   }
+   footer img {
+    max-width:100%
+   }
+   footer p {
+    font-size:16px;
+    line-height:30px;
+    color:#898b96;
+    font-weight:300
+   }
+   footer h4 {
+    font-family:Rubik,sans-serif;
+    margin:0;
+    font-weight:400;
+    padding:0;
+    color:#363940
+   }
+   footer a {
+    color:#5867dd
+   }
+   footer.no-padding {
+    padding:0!important
+   }
+   
+   .footer-big {
+    padding:35px 0 10px 60px ;
+   }
+   .footer-big .footer-widget {
+    margin-bottom:40px
+   }
+   .footer--light {
+    background:#d4e7eb;
+
+   }
+   .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+    color:#070707
+   }
+   .footer-menu {
+    padding-left:48px
+   }
+   .footer-menu ul li a {
+    font-size:15px;
+    line-height:32px;
+   
+   }
+   .footer-menu ul li a:hover {
+    color:#5867dd
+   }
+   .footer-menu--1 {
+    width:100%
+   }
+   .footer-widget-title {
+    line-height:42px;
+    margin-bottom:10px;
+    font-size:18px
+   }
+   .mini-footer {
+    background:#192027;
+    text-align:center;
+    padding:12px 0;
+   }
+   .mini-footer p {
+    margin:0;
+    line-height:26px;
+    font-size:15px;
+    color:#999
+   }
+   .mini-footer p a {
+    color:#4f9ce4
+   }
+   .mini-footer p a:hover {
+    color:#34bfa3
+   }
+   .widget-about img {
+    display:block;
+    margin-bottom:30px
+   }
+   .widget-about p {
+    font-weight:400
+   }
+   .widget-about .contact-details {
+    margin:30px 0 0 0
+   }
+   .widget-about .contact-details li {
+    margin-bottom:10px
+   }
+   .widget-about .contact-details li:last-child {
+    margin-bottom:0
+   }
+   .widget-about .contact-details li span {
+    padding-right:12px
+   }
+   .widget-about .contact-details li a {
+    color:#5867dd
+   }
+   @media (max-width:991px) {
+    .footer-menu {
+     padding-left:0
+    }
+   }
+
+   footer .social{
+   font-size: 30px;
+   line-height: 30px;
+
+   text-decoration: none;/* les icones ne seront pas surligner (TOP BAR) */
+   justify-content: inherit;
+}
+footer .social .fab{
+    margin-left: 15px;
+ }
+
+
+/*--------------------------------------------------------------
+# SCROLL TOP
+-------------------------------------------------------------- */
+ #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fa561bef; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #ff4400b0; /* Add a dark-grey background on hover */
+  }
+
+ 
+/*--------------------------------------------------------------
+PLAYBOUTTON ANIMATION* https://codepen.io/jaredringold/pen/zvwWyb & https://mdbootstrap.com/snippets/jquery/bartek-malanowski/507300#html-tab-view
+ -------------------------------------------------------------- */
+
+.wrapper img {
+	max-width:100%;
+	height:auto;
+}
+
+.wrapper iframe {
+	display:none;
+}
+
+
+.play-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+
+.play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ba1f24;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #fa183d;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.play-button:hover:after {
+  background-color: darken(#fa183d, 10%);
+}
+
+.play-button img {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid #fff;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+.video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+  }
+  
+  .video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #fa183d;
+  }
+  
+  .video-overlay iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* width: 90%; */
+    /* height: auto; */
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  }
+
+  
